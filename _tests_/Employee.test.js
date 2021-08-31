@@ -15,12 +15,12 @@ test("fetches employee name", () => {
 
 test("fetches employee's ID", () => {
     const employee = new Employee('Bill Nye', '123', 'Bill@Nye.com');
-    expect(employee.getId()).toEqual(expect.stringContaining('1234'));
+    expect(employee.getId()).toEqual(expect.stringContaining('123'));
 });
 
 test("fetches employee's email", () => {
     const employee = new Employee('Bill Nye', '123', 'Bill@Nye.com');
-    expect(employee.getEmail()).toEqual(expect.stringContaining('john@john.com'));
+    expect(employee.getEmail()).toEqual(expect.stringContaining('Bill@Nye.com'));
 });
 
 test("fetches employee's position", () => {

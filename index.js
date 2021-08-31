@@ -4,6 +4,7 @@ const Employee = require('./lib/Employee');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const writeFile = require('./src/generate');
+const generatePage = require('./src/template')
 
 let engineer = [];
 let intern = [];
@@ -95,3 +96,11 @@ function Prompt() {
             }
         })
 };
+
+Prompt()
+    .then(teamData => {
+        return generatePage(employeeArray)
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML)
+    })
