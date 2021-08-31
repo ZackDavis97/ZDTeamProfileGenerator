@@ -20,9 +20,11 @@ This project was created to help generate information for multiple employees in 
 - [Questions](#questions)
 
 ## Installation
-The library folder holds different js files that are used with the index.js to create an index.html thats in a dist folder. Below you can follow a video guide on how to run the code.
+The library folder holds different js files that are used with the index.js to create an index.html thats in a dist folder. Below you can follow a video guide on how to run the code. Also, a link to my GitHub for the assignment.
 
 https://drive.google.com/file/d/13Jo1wfSJKkr0zNMVGJplmIZ1euDyjSWy/view
+
+https://github.com/ZackDavis97/ZDTeamProfileGenerator
 
 ## Usage
 To create a profile generator for a business.
