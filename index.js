@@ -12,6 +12,7 @@ let manager = [];
 let employeeArray = {engineer, intern, manager};
 
 function Prompt() {
+    
     return inquirer
     .prompt([
         {
@@ -23,7 +24,7 @@ function Prompt() {
         {
             type:'text',
             name: 'employee',
-            message: "What is the Employee's name?"
+            message: "What is the employee's name?"
         },
         {
             type:'text',
@@ -35,7 +36,7 @@ function Prompt() {
             name: 'email',
             message: "What is the employee's email?"
         }])
-        .then(({employee, id, email, role}) => {
+        .then(({employee, id, email, position}) => {
             if (position === "Manager") {
                 return inquirer
                     .prompt([{
